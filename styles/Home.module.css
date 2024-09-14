@@ -3,20 +3,126 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 4rem 0;
+  height: 100%;
+  width: 100%;
+}
+
+.head {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  z-index: 1;
+}
+
+.head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/acceuilNitflex.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+}
+
+.head::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.headHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0px 200px;
+  height: 10vh;
+  z-index: 1;
+}
+
+.btn {
+  width: 130px;
+  height: 35px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.containerHead {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+}
+
+.email {
+  display: flex;
+  gap: 15px;
+  z-index: 1;
+}
+
+.btnContai {
+  height: 60px;
+  width: 200px;
+  font-weight: 700;
+  font-size: 25px;
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  z-index: 1;
 }
 
 .title {
-  line-height: 1.15;
-  font-size: 4rem;
+  font-size: 70px;
+  text-align: center;
+  z-index: 1;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.title,
+.para {
+  line-height: 1;
 }
 
-.title a:hover, .title a:focus, .title a:active {
-  text-decoration: underline;
+.text {
+  text-align: center;
+  z-index: 1;
+}
+
+.containerBody {
+  background: linear-gradient(#0d0dc6, #05054b 10%);
+  width: 100%;
+}
+.tendance {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.films {
+}
+
+.poster {
+  width: 400px;
 }
